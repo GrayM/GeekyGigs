@@ -153,9 +153,6 @@ h2 {
     width: 100%;
     transform: translateX(-50%);
 }
-.stick input {
-
-}
 .head1 {
     transition: all .20s ease;
     position: fixed;
@@ -241,9 +238,7 @@ a:visited {
         transform: translateX(-50%);
     }
 
-    input {
-        height:75px;
-    }
+   
     .head1 {
         display: none;
     }
@@ -255,13 +250,24 @@ a:visited {
     .grid-7-800 > * {
         width: 20%;
     }
-}
 
-@media all and (max-width:800px) and (min-width:482px) {
-    form {
-        width:100%;      
-    }
+   
+}
+@media all and (min-width: 482px) and (max-width:799px) {
     input {
-        width:250px;
+        width:175px;
+    }
+       
+    
+    
+}
+@media (min-width: 483px) and (max-width: 798px) {
+     form {
+        width:100%;
     }
 }
+/*@media (max-width:800px) and (min-width:480px) {
+    form {
+        width:600px;
+    }
+}*/
