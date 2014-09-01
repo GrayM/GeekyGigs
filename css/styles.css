@@ -27,7 +27,7 @@ header {
 }
 /*-------------------------------------------SEARCH NAV & PARALLAX*/
 .parallax {
-    background: url("/images/icons2.png");
+    background: url(../images/icons.png);
     background-attachment: fixed;
     background-position: center center;
 }

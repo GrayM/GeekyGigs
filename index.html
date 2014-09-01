@@ -2,85 +2,43 @@
 <html lang="en">
 
 <head>
-
     <link rel="stylesheet" type="text/css" href="./css/normalize.css">
     <link rel="stylesheet" type="text/css" href="./css/typeplate.css">
     <link rel="stylesheet" type="text/css" href="./css/styles.css">
-
     <meta charset="UTF-8">
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1">
     <title>Geeky Gigs</title>
 </head>
 
 <body>
     <div class="parallax">
         <div class="container">
-
             <div class="searchContainer">
-
                 <p id="tag"><img src="./images/geek/geek.svg">Geeky Gigs</p>
-                
                 <form method="POST" action="#" id="searchForm">
                     <h1>Looking for a geeky gig?</h1>
-                    <input placeholder="enter search terms" type="text" name="search" value="javascript">
-                    <input class="zipcode" type="text" value="" placeholder="search for a location" name="location"> <!-- pattern="\d*" -->
+                    <input placeholder="enter search terms" type="text" name="search" value="javascript" onfocus="this.value = ''">
+                    <input class="zipcode" type="text" value="" placeholder="search for a location" name="location">
                     <input type="submit" value="search">
-
-                    <!-- <div class="filter">
-                        <h2>Filter by:</h2>
-                        <select>
-
-                            <option value="location">Location</option>
-                            <option value="salary">Salary</option>
-                            <option value="location">Years Experience</option>
-
-                        </select>
-                    </div> -->
-
-
                 </form>
             </div>
-
-            <!-- <table class="results">
-                <thead>
-                    <tr>
-                        <th>Job Title</th>
-                        <th>Company</th>
-
-                        <th>Location</th>
-                        <th>Posted</th>
-                        <th>Salary</th>
-                        <th>Experience</th>
-                        <th>Job ID</th>
-                    </tr>
-                </thead>
-                <tbody class="templateDestination"></tbody>
-            </table> -->
-                <div class="grid grid-7-800 grid-header">
-                    <span class = "head">Job Title</span>
-                    <span class = "head">Company</span>
-                    <span class = "head">Location</span>
-                    <span class = "head">Posted</span>
-                    <span class = "head">Like it?</span>
-                    
-                </div>
+            <div class="grid grid-7-800 grid-header">
+                <span class="head">Job Title</span>
+                <span class="head">Company</span>
+                <span class="head">Location</span>
+                <span class="head">Posted</span>
+                <span class="head">Like it?</span>
+            </div>
             <div class="jobContainer">
-                <!-- <div class="grid grid-7-800 grid-header">
-                    <span class = "head">Job Title</span>
-                    <span class = "head">Company</span>
-                    <span class = "head">Location</span>
-                    <span class = "head">Posted</span>
-                    <span class = "head">Interested?</span>
-                    
-                </div> -->
                 <div class="templateDestination"></div>
             </div>
-    </div>
-
-        <script type="text/javascript" src="http://cdnjs.cloudflare.com/ajax/libs/lodash.js/2.4.1/lodash.js"></script>
-        <script type="text/javascript" src="http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.1/jquery.js"></script>
-        <script type="text/javascript" src="./js/backbone.js"></script>
-        <script type="text/javascript" src="./js/real-code.js"></script>
-        <script type="text/javascript" src="./js/moment.js"></script>
+        </div>
+    </div>    
+    <script type="text/javascript" src="http://cdnjs.cloudflare.com/ajax/libs/lodash.js/2.4.1/lodash.js"></script>
+    <script type="text/javascript" src="http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.1/jquery.js"></script>
+    <script type="text/javascript" src="./js/backbone.js"></script>
+    <script type="text/javascript" src="./js/real-code.js"></script>
+    <script type="text/javascript" src="./js/moment.js"></script>
 </body>
 
 </html>
